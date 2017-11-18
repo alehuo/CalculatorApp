@@ -4,7 +4,7 @@ import { Metrics, ApplicationStyles } from '../../Themes/'
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
   container: {
-    paddingBottom: Metrics.baseMargin
+    flexDirection: 'row'
   },
   logo: {
     marginTop: Metrics.doubleSection,
@@ -14,5 +14,10 @@ export default StyleSheet.create({
   },
   centered: {
     alignItems: 'center'
+  },
+  row: {
+    flex: 1,
+    flexDirection: 'column',
+    height: '20%'
   }
 })
